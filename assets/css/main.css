@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   font-family: "NexonLv1Gothic";
+  overflow: hidden;
 }
 
 article,
@@ -3077,6 +3078,7 @@ dl dd {
 section.special,
 article.special {
   text-align: center;
+  
 }
 
 header p {
