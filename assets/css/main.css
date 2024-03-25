@@ -91,7 +91,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   font-family: "NexonLv1Gothic";
-  overflow: hidden;
 }
 
 article,
@@ -3081,6 +3080,7 @@ article.special {
   
 }
 
+
 header p {
   color: white;
   position: relative;
@@ -3219,6 +3219,7 @@ body.is-ie .spotlights > section {
   display: block;
   position: relative;
   width: 25em;
+  /* overflow: hidden; */
 }
 
 .spotlights > section > .image img {
@@ -3282,6 +3283,7 @@ body.is-ie .spotlights > section {
 
 .spotlights > section.inactive > .image:before,
 body.is-loading .spotlights > section > .image:before {
+  
   opacity: 1;
 }
 
