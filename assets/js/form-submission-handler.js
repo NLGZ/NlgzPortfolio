@@ -106,7 +106,6 @@ span2.onclick = function() {
 }
 
 window.onclick = function(event) {
-  // 변경: 두 모달 중 열려 있는 모달을 검사하고 닫습니다.
   if (event.target == modal1) {
     modal1.style.display = "none";
   } else if (event.target == modal2) {
