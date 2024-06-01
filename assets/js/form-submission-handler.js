@@ -78,3 +78,38 @@
         }
     }
 })();
+
+var modal1 = document.getElementById("onezip");
+var btn1 = document.querySelector("a[href='http://13.125.130.50:8080/onezip/']");
+var span1 = modal1.querySelector(".close");  // 변경: 모달 내부에서만 닫기 버튼을 선택
+
+btn1.onclick = function(event) {
+  event.preventDefault();
+  modal1.style.display = "block";
+}
+
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+var modal2 = document.getElementById("dawumi");
+var btn2 = document.querySelector("a[href='http://13.125.130.50:8080/dawumi/']");
+var span2 = modal2.querySelector(".close");  // 변경: 모달 내부에서만 닫기 버튼을 선택
+
+btn2.onclick = function(event) {
+  event.preventDefault();
+  modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+window.onclick = function(event) {
+  // 변경: 두 모달 중 열려 있는 모달을 검사하고 닫습니다.
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  } else if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
