@@ -80,7 +80,7 @@
 })();
 
 var modal1 = document.getElementById("onezip");
-var btn1 = document.querySelector("a[href='http://13.125.130.50:8080/onezip/']");
+var btn1 = document.getElementById("onezipModal");
 var span1 = modal1.querySelector(".close");  // 변경: 모달 내부에서만 닫기 버튼을 선택
 
 btn1.onclick = function(event) {
@@ -93,7 +93,7 @@ span1.onclick = function() {
 }
 
 var modal2 = document.getElementById("dawumi");
-var btn2 = document.querySelector("a[href='http://13.125.130.50:8080/dawumi/']");
+var btn2 = document.getElementById("dawumiModal");
 var span2 = modal2.querySelector(".close");  // 변경: 모달 내부에서만 닫기 버튼을 선택
 
 btn2.onclick = function(event) {
