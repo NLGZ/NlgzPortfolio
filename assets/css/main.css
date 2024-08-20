@@ -3271,6 +3271,7 @@ body.is-ie .spotlights > section {
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;
+
 }
 
 .spotlights > section:nth-child(2) {
@@ -3322,6 +3323,7 @@ body.is-loading .spotlights > section > .content > .inner {
     -webkit-transform: translateY(1em);
     -ms-transform: translateY(1em);
     transform: translateY(1em);
+    
   }
 }
 
@@ -3414,6 +3416,8 @@ table.alt tfoot {
   padding: 5em 5em 3em 5em;
   max-width: 100%;
   width: 75em;
+  margin: auto;
+
 }
 
 @media screen and (max-width: 1680px) {
