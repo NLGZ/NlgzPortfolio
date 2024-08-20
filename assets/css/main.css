@@ -2788,11 +2788,14 @@ input[type="radio"] + label:before {
 .image:hover {
   /* 호버 시 확대 효과 */
   transform: scale(1.1); /* 이미지를 10% 확대 */
+  overflow: hidden;
+  z-index: 99999;
 }
 
 .image img {
   border-radius: 0.25em;
   display: block;
+  overflow: hidden;
 }
 
 .image.left,
@@ -3723,7 +3726,7 @@ body.is-loading .wrapper.fade > .inner {
   text-align: right;
   top: 0;
   width: 18em;
-  z-index: 10000;
+  z-index: 999;
 }
 
 #sidebar > .inner {
@@ -4113,8 +4116,7 @@ body.is-loading #sidebar nav ul li {
   padding: 20px;
   border: 1px solid #493382;
   width: 80%; /* 너비 */
-  z-index: 10001;
-
+  z-index: 100011;
 }
 
 /* 닫기 버튼 스타일 */
@@ -4123,6 +4125,8 @@ body.is-loading #sidebar nav ul li {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
 }
 
 .close:hover,
